@@ -14,12 +14,12 @@ public class LoggerBillPugh {
     }
 
     private static class LoggerBillPughHolder {
-        private static LoggerBillPugh loggerLazyInstance = new LoggerBillPugh();
+        private static final LoggerBillPugh LOGGER_BILL_PUGH = new LoggerBillPugh();
     }
 
     private static LoggerBillPugh getLoggerLazyInstance() {
         System.out.println("Istance LoggerBillPugh exists");
-        return LoggerBillPughHolder.loggerLazyInstance;
+        return LoggerBillPughHolder.LOGGER_BILL_PUGH;
     }
 
     public static void log(LogLevel level, String msg) {
