@@ -92,6 +92,7 @@ fabric.properties
 
 # End of https://www.gitignore.io/api/intellij
 
-# Rest
+# The rest files to unversion
 vcs.xml
 checkstyle-idea.xml
+.idea/.gitignore
