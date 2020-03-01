@@ -1,4 +1,4 @@
-package excersises.userRegistration;
+package excersises.fascade;
 
 public class Student extends Person {
 
