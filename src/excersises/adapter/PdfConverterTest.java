@@ -6,7 +6,8 @@ public class PdfConverterTest {
         DocFile docFile = new DocFile();
         PdfFile pdfFile = new PdfFile();
 
-        ToPdfConverterImpl toPdfConverter = new ToPdfConverterImpl(docFile);
-        pdfFile.printText(toPdfConverter);
+        Converter converter = new ToPdfConverterImpl(docFile);
+        pdfFile.printText(converter);
     }
+
 }
